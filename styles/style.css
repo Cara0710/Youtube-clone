@@ -1,0 +1,576 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+header {
+  background-color: #202020;
+  display: flex;
+  width: 100%;
+  height: 3.6rem;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  flex-wrap: wrap;
+}
+header div.logo {
+  display: flex;
+  align-items: center;
+  flex: 1 1 100px;
+  margin-left: 1.5rem;
+}
+header div.logo img.linelist {
+  margin-right: 1.5rem;
+  cursor: pointer;
+}
+header div.logo div.youtubeLogo {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+header div.logo div.youtubeLogo img {
+  width: 30px;
+  height: 30px;
+}
+header div.logo div.youtubeLogo h1 {
+  padding-left: 0.25rem;
+  color: white;
+  font-size: 1.25rem;
+  letter-spacing: -1.75px;
+  font-weight: 700px;
+}
+header div.logo div.youtubeLogo h1 sup.tw {
+  font-weight: normal;
+  font-size: 0.75rem;
+  color: #aaaaaa;
+}
+header div.searchbox {
+  flex: 5 1 50px;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+header div.searchbox input {
+  width: 65%;
+  height: 70%;
+  font-size: 1rem;
+  color: white;
+  padding: 0.5rem 0.5rem;
+  border: 0.2px solid #2c2c2c;
+  background-color: #121212;
+  z-index: 5;
+}
+header div.searchbox div {
+  background-color: #313131;
+  height: 70%;
+  width: 60px;
+  display: flex;
+  border: 0.2px solid #2c2c2c;
+  border-radius: 2px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+header div.searchbox div img.searchicon {
+  width: 20px;
+  height: 20px;
+}
+header div.searchbox img {
+  width: 40px;
+  height: 40px;
+  margin: 0rem 0.75rem;
+  cursor: pointer;
+}
+header div.rightlist {
+  flex: 1.8 1 130px;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+header div.rightlist div.navbar {
+  display: flex;
+  align-items: center;
+  margin-right: 1.5rem;
+}
+header div.rightlist div.navbar img {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  margin: 0rem 0.75rem;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #181818;
+  color: white;
+}
+main section.container {
+  margin-top: 5.25rem;
+  width: 90%;
+  min-height: 90vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+main section.container section.left {
+  flex: 4 1 550px;
+}
+main section.container section.left div.video {
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  position: relative;
+}
+main section.container section.left div.video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+main section.container section.left div.videointro {
+  padding: 1rem 0rem;
+  border-bottom: 1px solid gray;
+}
+main section.container section.left div.videointro h4 {
+  font-size: 1.1rem;
+  padding-bottom: 1rem;
+}
+main section.container section.left div.videointro div.introdown {
+  display: flex;
+  align-items: center;
+}
+main section.container section.left div.videointro div.introdown div.viewtimes {
+  flex: 1 1 300px;
+}
+main section.container section.left div.videointro div.introdown div.viewtimes h5 {
+  color: #aaaaaa;
+}
+main section.container section.left div.videointro div.introdown div.intronav {
+  display: flex;
+  justify-content: right;
+}
+main section.container section.left div.videointro div.introdown div.intronav span.intronavbar {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin: 0rem 0.5rem;
+}
+main section.container section.left div.videointro div.introdown div.intronav span.intronavbar img.intrologo {
+  width: 1.5vw;
+  height: 1.5vw;
+}
+main section.container section.left div.videointro div.introdown div.intronav span.intronavbar img.shareicon {
+  width: 2vw;
+  height: 2vw;
+}
+main section.container section.left div.videointro div.introdown div.intronav span.intronavbar h6 {
+  font-size: 0.75rem;
+  padding: 0rem 0.5rem;
+}
+main section.container section.left div.videointro div.introdown div.intronav span.intronavbar {
+  display: flex;
+  align-items: center;
+}
+main section.container section.left div.videointro div.introdown div.intronav span.intronavbar img {
+  width: 1.5vw;
+  height: 1.5vw;
+}
+main section.container section.left div.authorintro {
+  border-bottom: 1px solid gray;
+}
+main section.container section.left div.authorintro div.author {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main section.container section.left div.authorintro div.author div.authorleft {
+  display: flex;
+  align-items: center;
+}
+main section.container section.left div.authorintro div.author div.authorleft a img {
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+}
+main section.container section.left div.authorintro div.author div.authorleft div.authorname {
+  margin: 1.5rem 1rem;
+}
+main section.container section.left div.authorintro div.author div.authorleft div.authorname div.nameup {
+  display: flex;
+}
+main section.container section.left div.authorintro div.author div.authorleft div.authorname div.nameup a {
+  text-decoration: none;
+}
+main section.container section.left div.authorintro div.author div.authorleft div.authorname div.nameup a h3 {
+  color: white;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+main section.container section.left div.authorintro div.author div.authorleft div.authorname div.nameup img {
+  width: 1rem;
+  height: 1rem;
+}
+main section.container section.left div.authorintro div.author div.authorleft div.authorname h5 {
+  padding-top: 0.5rem;
+  color: #aaaaaa;
+}
+main section.container section.left div.authorintro div.author div.subscription {
+  width: 4.75rem;
+  cursor: pointer;
+}
+main section.container section.left div.authorintro div.author div.subscription h4 {
+  padding: 0.65rem 0.85rem;
+  text-align: center;
+  background-color: #cc0000;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+main section.container section.left div.authorintro div.authordown {
+  margin-left: 4rem;
+}
+main section.container section.left div.authorintro div.authordown p {
+  font-size: 0.9rem;
+}
+main section.container section.left div.authorintro div.authordown h5 {
+  padding: 1.5rem 0rem;
+  color: #aaaaaa;
+  cursor: pointer;
+}
+main section.container section.left div.insert {
+  width: 100%;
+  min-height: 0;
+}
+main section.container section.left section.comment div.commenttitle {
+  margin: 1.5rem 0rem;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+main section.container section.left section.comment div.commenttitle h3 {
+  font-size: 1rem;
+  padding-right: 1rem;
+  width: 150px;
+}
+main section.container section.left section.comment div.commenttitle div.ranking {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+main section.container section.left section.comment div.commenttitle div.ranking img {
+  width: 1.25rem;
+  height: 1.25rem;
+  margin: 0rem 0.5rem;
+}
+main section.container section.left section.comment div.commenttitle div.ranking p {
+  font-size: 0.85rem;
+}
+main section.container section.left section.comment div.post {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+main section.container section.left section.comment div.post img.userpic {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-right: 1rem;
+}
+main section.container section.left section.comment div.post div.postcomment {
+  width: 100%;
+}
+main section.container section.left section.comment div.post div.postcomment input {
+  background-color: #181818;
+  border: none;
+  border-bottom: 1px solid rgb(178, 177, 177);
+  width: 100%;
+  color: white;
+  padding: 0.25rem 0rem;
+  font-size: 0.75rem;
+}
+main section.container section.left section.comment div.post div.postcomment input:focus {
+  outline: none;
+  border-bottom: 1px solid white;
+}
+main section.container section.left section.comment div.commentboard {
+  display: flex;
+  margin: 2rem 0rem;
+}
+main section.container section.left section.comment div.commentboard:hover img.listbutton {
+  height: 1.25rem;
+  width: 1.25rem;
+  margin: 0.5rem;
+  visibility: visible;
+}
+main section.container section.left section.comment div.commentboard div.usercontainer {
+  width: 4rem;
+}
+main section.container section.left section.comment div.commentboard div.usercontainer img.userphoto {
+  width: 2.5rem;
+  height: 2.5rem;
+  cursor: pointer;
+}
+main section.container section.left section.comment div.commentboard div.board {
+  width: 100%;
+}
+main section.container section.left section.comment div.commentboard div.board div.boardup {
+  display: flex;
+  align-items: center;
+}
+main section.container section.left section.comment div.commentboard div.board div.boardup h4 {
+  font-size: 0.9rem;
+  cursor: pointer;
+  padding-right: 0.25rem;
+}
+main section.container section.left section.comment div.commentboard div.board div.boardup h5 {
+  font-size: 0.75rem;
+  color: #aaaaaa;
+  cursor: pointer;
+}
+main section.container section.left section.comment div.commentboard div.board div.boardup h5:hover {
+  color: white;
+}
+main section.container section.left section.comment div.commentboard div.board div.boardmiddle p {
+  font-size: 0.9rem;
+  padding: 0.5rem 0rem;
+}
+main section.container section.left section.comment div.commentboard div.board div.boarddown {
+  display: flex;
+  align-items: center;
+  margin: 0.9rem 0rem;
+}
+main section.container section.left section.comment div.commentboard div.board div.boarddown span {
+  display: flex;
+  align-items: center;
+}
+main section.container section.left section.comment div.commentboard div.board div.boarddown span img {
+  width: 1rem;
+  height: 1rem;
+  cursor: pointer;
+}
+main section.container section.left section.comment div.commentboard div.board div.boarddown span p {
+  font-size: 0.75rem;
+  color: #aaaaaa;
+  padding-left: 0.75rem;
+}
+main section.container section.left section.comment div.commentboard div.board div.boarddown img.dislike {
+  width: 1rem;
+  height: 1rem;
+  margin: 0rem 1.5rem;
+  cursor: pointer;
+}
+main section.container section.left section.comment div.commentboard div.board div.boarddown h6 {
+  font-size: 0.75rem;
+  color: #aaaaaa;
+  cursor: pointer;
+}
+main section.container section.left section.comment div.commentboard div.board div.response {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+main section.container section.left section.comment div.commentboard div.board div.response img {
+  width: 0.6rem;
+  height: 0.5rem;
+}
+main section.container section.left section.comment div.commentboard div.board div.response p {
+  font-size: 0.9rem;
+  color: #3ea6ff;
+  margin: 0rem 1rem;
+}
+main section.container section.left section.comment div.commentboard img.listbutton {
+  height: 1.25rem;
+  width: 1.25rem;
+  margin: 0.5rem;
+  visibility: hidden;
+}
+main section.container section.right {
+  flex: 1 1 310px;
+  margin-left: 1.5rem;
+}
+main section.container section.right div.rightcontainer {
+  display: flex;
+  flex-direction: column;
+}
+main section.container section.right div.rightcontainer div.buttonbox {
+  display: flex;
+  flex-wrap: wrap;
+}
+main section.container section.right div.rightcontainer div.buttonbox button {
+  border-radius: 20px;
+  border-style: none;
+  background-color: #303030;
+  border: 0.25px solid #444444;
+  margin: 0.5rem 0rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+main section.container section.right div.rightcontainer div.buttonbox button:hover {
+  transition: all 0.2s ease-in;
+  background-color: #464646;
+}
+main section.container section.right div.rightcontainer div.buttonbox button:focus {
+  background-color: white;
+}
+main section.container section.right div.rightcontainer div.buttonbox button:focus h3 {
+  color: black;
+}
+main section.container section.right div.rightcontainer div.buttonbox button h3 {
+  padding: 0.5rem 0.75rem;
+  font-size: 0.9rem;
+  color: white;
+}
+main section.container section.right div.rightcontainer div.recommendcontainer {
+  margin-top: 0.25rem;
+}
+main section.container section.right div.rightcontainer div.recommendcontainer div.recommendvideo {
+  margin: 0.5rem 0rem;
+}
+main section.container section.right div.rightcontainer div.recommendcontainer div.recommendvideo a.recommend {
+  display: flex;
+}
+main section.container section.right div.rightcontainer div.recommendcontainer div.recommendvideo a.recommend:hover img.listbutton2 {
+  height: 1.25rem;
+  width: 1.25rem;
+  margin: 0 0.5rem;
+  visibility: visible;
+}
+main section.container section.right div.rightcontainer div.recommendcontainer div.recommendvideo a.recommend:hover div.recommendright div.imagecontainer {
+  position: relative;
+}
+main section.container section.right div.rightcontainer div.recommendcontainer div.recommendvideo a.recommend:hover div.recommendright div.imagecontainer img.move {
+  width: 170px;
+  height: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 50;
+  visibility: visible;
+}
+main section.container section.right div.rightcontainer div.recommendcontainer div.recommendvideo a.recommend div.recommendright div.imagecontainer {
+  position: relative;
+}
+main section.container section.right div.rightcontainer div.recommendcontainer div.recommendvideo a.recommend div.recommendright div.imagecontainer img.reco {
+  width: 170px;
+  height: 100px;
+}
+main section.container section.right div.rightcontainer div.recommendcontainer div.recommendvideo a.recommend div.recommendright div.imagecontainer img.move {
+  width: 170px;
+  height: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 12;
+  visibility: hidden;
+}
+main section.container section.right div.rightcontainer div.recommendcontainer div.recommendvideo a.recommend div.recommendmiddle {
+  margin-left: 0.5rem;
+  line-height: 1.25rem;
+  width: 100%;
+}
+main section.container section.right div.rightcontainer div.recommendcontainer div.recommendvideo a.recommend div.recommendmiddle h4 {
+  color: white;
+  font-size: 0.9rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+main section.container section.right div.rightcontainer div.recommendcontainer div.recommendvideo a.recommend div.recommendmiddle p {
+  color: #aaaaaa;
+  font-size: 0.75rem;
+}
+main section.container section.right div.rightcontainer div.recommendcontainer div.recommendvideo a.recommend div.recommendmiddle div.nameicon {
+  display: flex;
+  align-items: center;
+  margin-top: 0.25rem;
+}
+main section.container section.right div.rightcontainer div.recommendcontainer div.recommendvideo a.recommend div.recommendmiddle div.nameicon img {
+  width: 1rem;
+  height: 1rem;
+}
+main section.container section.right div.rightcontainer div.recommendcontainer div.recommendvideo a.recommend img.listbutton2 {
+  height: 1.25rem;
+  width: 1.25rem;
+  margin: 0 0.5rem;
+  visibility: hidden;
+}
+
+@media screen and (max-width: 1260px) {
+  main section.container section.left div.videointro div.introdown div.intronav {
+    display: flex;
+    align-items: center;
+  }
+  main section.container section.left div.videointro div.introdown div.intronav span.intronavbar {
+    display: flex;
+    flex-direction: column;
+  }
+  main section.container section.left div.videointro div.introdown div.intronav span.intronavbar img.intrologo {
+    width: 2vw;
+    height: 2vw;
+  }
+  main section.container section.left div.videointro div.introdown div.intronav span.intronavbar img.shareicon {
+    width: 2.5vw;
+    height: 2.5vw;
+  }
+}
+@media screen and (max-width: 670px) {
+  header div.logo {
+    margin-left: 0.5rem;
+  }
+  header div.logo img.linelist {
+    margin-right: 0.5rem;
+  }
+  header div.logo div.youtubeLogo h1 sup.tw {
+    position: absolute;
+    visibility: hidden;
+  }
+  header div.searchbox {
+    width: 0;
+    position: absolute;
+    visibility: hidden;
+  }
+  header div.rightlist div.navbar {
+    margin-right: 0.25rem;
+  }
+  main section.container section.left div.videointro div.introdown div.viewtimes {
+    flex: 1 1 0px;
+  }
+  main section.container section.left div.videointro div.introdown div.viewtimes h5 {
+    font-size: 0;
+    visibility: hidden;
+  }
+  main section.container section.left div.videointro div.introdown div.intronav {
+    display: flex;
+    align-items: center;
+  }
+  main section.container section.left div.videointro div.introdown div.intronav span.intronavbar {
+    display: flex;
+    flex-direction: column;
+  }
+  main section.container section.left div.videointro div.introdown div.intronav span.intronavbar img.intrologo {
+    width: 5vw;
+    height: 5vw;
+  }
+  main section.container section.left div.videointro div.introdown div.intronav span.intronavbar img.shareicon {
+    width: 5.5vw;
+    height: 5.5vw;
+  }
+  main section.container section.right {
+    margin-left: 0rem;
+  }
+}/*# sourceMappingURL=style.css.map */
