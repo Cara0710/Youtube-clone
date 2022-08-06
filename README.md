@@ -1,7 +1,7 @@
 <h1 align="center">Hi 👋, make a youtube-clone!</h1>
 
 <h3 align="left">作品連結:/<h3>
-[<p align="left"></p>](https://youtubeclonepratice.netlify.app/)
+[https://youtubeclonepratice.netlify.app/]
 
 <h3 align="left">內容要旨:/<h3>
 <p align="left">此side-project是運用純html及sass練習切版出一個youtube頁面</p>
